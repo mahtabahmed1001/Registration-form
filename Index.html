@@ -2,99 +2,188 @@
 <html>
     <head>
         <title>Registration Form</title>
-        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="Style1.css">
+        
     </head>
 
+
     <body>
-        <form action="" class="container">
-            <h1 class="heading">Sign Up</h1>
-            <div class="steps-container">
-                <hr>
-                <hr class="active">
-                <div class="steps"><i class="fa-solid"></i></div>
-                <div class="steps"><i class="fa-solid"></i></div>
-                <div class="steps"><i class="fa-solid"></i></div>
-                <div class="steps"><i class="fa-solid"></i></div>
+        <header>
+            <h2 class="logo">Logo</h2>
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+                <button class="buttonLogin-popup">Login</button>
+            </nav>
+        </header>
+  
+                    <!--Login form Start-->
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" name="" id="" required>
+                        <label for="">E-mail</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" name="" id="" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="remember-forget">
+                        <label for=""><input type="checkbox" name="" id="">Remember me</label>
+                        <a href="#">Forget Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+
+                    <div class="login-register"> 
+                        <p>Don't have an account? <a href="#" class="register-link">SignUp</a></p>
+                    </div>
+                </form>
             </div>
+                    <!--Login form End-->
 
-            <div class="input-slide-container">
-                <scroller>
-                    <div class="input-slide">
-                        <h3>User Name</h3>
-                        <p><i>Username is your online Identity</i></p>
+                    <!--registration form start-- User details-->
 
-                        <ul class="rules">
-                            <i>Your username should only contain letters, numbers, underscores or hyphens.</i>
-                            <i>No spaces or special characters allowed.</i>
-                            <i>Your username should not be offensive or contain profanity.</i>
-                        </ul>
-                        <input type="text" placeholder="Type Your Username" name="username" class="username">
-                        <div class="full-name">
-                            <input type="text" placeholder="First Name" name="firstname" id="" class="firstname">
-                            <input type="text" name="lastname" placeholder="Last Name" id="" class="lastname">
+                    <div class="form-box registration">
+                        <h2>Registration</h2>
+                        <form action="#">
+                           
+                            <div class="input-slide">
+                            <h3>User Name</h3>
+                            <p><i>Username is your online Identity</i></p>
+    
+                            <ul class="rules">
+                                <i>Your username should only contain letters, numbers, underscores or hyphens.</i>
+                                <i>No spaces or special characters allowed.</i>
+                                <i>Your username should not be offensive or contain profanity.</i>
+                            </ul>
+                           
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                                <input type="text" name="" id="" required>
+                                <label for="">Username</label>
+                            </div>
+
+                            <div class="full-name">
+                                <input type="text" placeholder="First Name" name="firstname" id="" class="firstname">
+                                <input type="text" name="lastname" placeholder="Last Name" id="" class="lastname">
+                            </div>
+
+                            <div class="otherinfo">
+                               <p>Date of Birth<input type="date" name="date" id="" required></p> 
+                                <p>Phone Number <input type="number"></p>
+                            
+                            </div>
+                            <button type="button" class="back">Back</button>
+                            <button type="submit" class="btn">Next</button>
+                            
+                            <div class="login-register"> 
+                                <p>Already have an account? <a href="#" class="login-link">Log in</a></p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!--registration form start-- E-mail-->
+
+                    <div class="form-box registration">
+                        <h2>Registration</h2>
+                        <form action="#">
+                           
+
+
+
+                            <div class="input-slide">
+                                <div class="input-slide user-detail">
+                                    <h3>E-mail</h3>
+                                    <p><i>Email is a gateway to your digital life</i></p>
+                                    <ul class="rules">
+                                        <i>Please enter valid email in the format "example@example.com".</i>
+                                        <i>we value your privacy and will never use your email for any unauthorized purposes.</i>
+                                        <i>Please don't use email that belong to someone else.</i>
+                                        <i>Please don't use email that includes personal information.</i>
+                                    </ul>
+                                    <input type="email" placeholder="E-mail" name="email" class="email">
+                                    <input type="email" placeholder="Confirm Your E-mail" name="email" class="email">
+                            
+                            </div>
+                            <button type="button" class="back">Back</button>
+                            <button type="submit" class="btn">Next</button>
+                            
+                            <div class="login-register"> 
+                                <p>Already have an account? <a href="#" class="login-link">Log in</a></p>
+                            </div>
+                        </form>
+                    </div>
+                          <!--registration form start-- password-->
+
+                   
+                          <div class="form-box registration">
+                            <h2>Registration</h2>
+                            <form action="#">
+    
+                                <div class="input-slide">
+                                    <h3>Password</h3>
+                                    <p><i>Secure your account with a strong password</i></p>
+                                    <ul class="rules">
+                                        <i>Include a mix of uppercase and lowercase letters, numbers, and special characters.</i>
+                                        <i>Avoid using common or easily guessable passwords.</i>
+                                        <i>Do not use personal information.</i>
+                                    </ul>
+                                    <input type="password" placeholder="Password" name="password" class="password">
+                                    <input type="password" placeholder="Confirm Your Password" name="password" class="Confirm-password">
+                                    
+                                </div>
+                                <button type="button" class="back">Back</button>
+                                <button type="submit" class="btn">Next</button>
+                                
+                                <div class="login-register"> 
+                                    <p>Already have an account? <a href="#" class="login-link">Log in</a></p>
+                                </div>
+                            </form>
                         </div>
-                        <button class="button-next" onclick="">Next</button>
+                      <!--registration form start-- Congratulations-->
+                      
+                      <div class="form-box registration">
+                        <h2>Registration</h2>
+                        <form action="#">
+
+                            <div class="input-slide">
+                                <h3>Submit Your Application</h3>
+                            <p><i>You have completed all the steps required for registration.</i></p>
+                            <ul class="rules">
+                                <i>Before submitting your information, please take a moment to ensure that all the details provided are correct.</i>
+                                <i>We take the privacy and security of our users very seriously, and it is important that all the information provided is accurate and up-to-date.</i>
+                                <i>Once you have confirmed that everything is in order, simply click the 'Submit' button.</i>
+                            </ul>
+                            
+                            
+                           
+                            </div>
+                            <button type="button" class="back">Back</button>
+                            <button type="submit" class="submit" onclick="" disabled>Submit</button>
+
+    
+                            
+                            <div class="login-register"> 
+                                <p>Already have an account? <a href="#" class="login-link">Log in</a></p>
+                            </div>
+                        </form>
                     </div>
-                    <div class="input-slide user-detail">
-                        <h3>E-mail</h3>
-                        <p><i>Email is a gateway to your digital life</i></p>
-                        <ul class="rules">
-                            <i>Please enter valid email in the format "example@example.com".</i>
-                            <i>we value your privacy and will never use your email for any unauthorized purposes.</i>
-                            <i>Please don't use email that belong to someone else.</i>
-                            <i>Please don't use email that includes personal information.</i>
-                        </ul>
-                        <input type="email" placeholder="E-mail" name="email" class="email">
-                        
-                        <button class="button-next" onclick="">Next</button>
-                    </div>
-
-                    </div>
-                    <div class="input-slide">
-                        <h3>Password</h3>
-                        <p><i>Secure your account with a strong password</i></p>
-                        <ul class="rules">
-                            <i>Include a mix of uppercase and lowercase letters, numbers, and special characters.</i>
-                            <i>Avoid using common or easily guessable passwords.</i>
-                            <i>Do not use personal information.</i>
-                        </ul>
-                        <input type="password" placeholder="Password" name="password" class="password">
-                        <input type="password" placeholder="Confirm Your Password" name="password" class="Confirm-password">
-                        
-                        <button class="button-next" onclick="">Next</button>
-                    </div>
-                    <div class="input-slide finish-slide">
-                        <h3>Congratulations</h3>
-                        <p><i>You have completed all the steps required for registration.</i></p>
-                        <ul class="rules">
-                            <i>Before submitting your information, please take a moment to ensure that all the details provided are correct.</i>
-                            <i>We take the privacy and security of our users very seriously, and it is important that all the information provided is accurate and up-to-date.</i>
-                            <i>Once you have confirmed that everything is in order, simply click the 'Submit' button.</i>
-                        </ul>
-                        
-                        
-                        <button type="submit" class="submit" onclick="" disabled>Submit</button>
-                    </div>
-                </scroller>
-                <button class="goBack" onclick=""><i class="fa-solid"></i></button>
-            </div>
-           
-            
 
 
+        </div> 
+    
 
 
+        <!--JS Portion-->
 
+        <script src="Script1.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-        </form>
-        
-
-
-
-
-
-
-
-        <script src="Script.js"></script>
     </body>
 </html>
